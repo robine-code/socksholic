@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socksholic - Cart</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            color: #333;
+        }
+        header {
+            background-color: #2cabe2;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2cabe2;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .cart {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            background-color: #FFFFFF;
+            border: 1px solid #DDD;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+        .cart-item img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 1rem;
+        }
+        .total {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #28A745;
+            margin-top: 2rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #2cabe2;
+            color: white;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cart-item {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo">Socksholic 🧦</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-item">
+             <img src="https://www.sockittome.com/cdn/shop/files/HotSauce-MensCrewSocks-MEF0247-MODEL-FRONT_1220x_crop_center.jpg?v=1724930878" alt="Hot Sauce Men's Crew Socks">
+            <div>
+                <h3>Hot Sauce Men's Crew Socks</h3>
+                <p>Price: 160 EGP</p>
+            </div>
+        </div>
+        <div class="cart-item">
+              <img src="https://www.sockittome.com/cdn/shop/files/MEF0699-FlyingSquirrels-MensCrew-Model_Front_1220x_crop_center.jpg?v=1749590828" alt="Flying Squirrels Crew Socks">
+            <div>
+                <h3>Flying Squirrels Crew Socks</h3>
+                <p>Price: 160 EGP</p>
+            </div>
+        </div>
+        <div class="cart-item">
+              <img src="https://www.sockittome.com/cdn/shop/files/W0442-EverydayIsAPicnicWithYou-CrewSocks-ModelSide_1220x_crop_center.jpg?v=1724932129" alt="Everyday Is a Picnic With You Crew Socks">
+            <div>
+                <h3>Everyday Is a Picnic With You Crew Socks</h3>
+                <p>Price: 200 EGP</p>
+            </div>
+        </div>
+        <div class="total">
+            Total: 520 EGP
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Socksholic. All rights reserved.</p>
+    </footer>
+</body>
+</html>

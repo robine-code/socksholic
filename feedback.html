@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socksholic - Feedback</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            color: #333;
+        }
+        header {
+            background-color: #2cabe2;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2cabe2;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .feedback-form {
+            max-width: 600px;
+            margin: 2rem auto;
+            background-color: #FFFFFF;
+            padding: 2rem;
+            border: 1px solid #DDD;
+            border-radius: 10px;
+        }
+        .feedback-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #2cabe2;
+        }
+        .feedback-form input, .feedback-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+        }
+        .feedback-form button {
+            background-color: #28A745;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .feedback-form button:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #2cabe2;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .feedback-form {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">Socksholic 🧦</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <section class="feedback-form">
+        <h2>Share Your Feedback</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Feedback Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2025 Socksholic. All rights reserved.</p>
+    </footer>
+</body>
+</html>

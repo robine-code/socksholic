@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socksholic - Shop</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            color: #333;
+        }
+        header {
+            background-color: #2cabe2;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2cabe2;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+        .product-card {
+            background-color: #FFFFFF;
+            border: 1px solid #DDD;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .product-card h3 {
+            color: #2cabe2;
+            margin: 0.5rem 0;
+        }
+        .product-card p {
+            font-weight: bold;
+            color: #28A745;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #2cabe2;
+            color: white;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo">Socksholic 🧦</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="product-card">
+            <img src="https://www.sockittome.com/cdn/shop/files/W0512-Cat-puccino-Womens-Crew-Model-Side_1220x_crop_center.jpg?v=1734126287" alt="Cat-puccino Crew Socks">
+            <h3>Cat-puccino Crew Socks</h3>
+            <p>Price: 150 EGP</p>
+        </div>
+        <div class="product-card">
+            <img src="https://www.sockittome.com/cdn/shop/files/W0434-Purr-scriptionForHappiness-CrewSocks-ModelFront_1220x_crop_center.jpg?v=1724932105" alt="Purr-scription For Happiness Crew Socks">
+            <h3>Purr-scription For Happiness Crew Socks</h3>
+            <p>Price: 120 EGP</p>
+        </div>
+        <div class="product-card">
+            <img src="https://www.sockittome.com/cdn/shop/files/OhSnap-WomensCrewSocks-W0215_MODEL_FRONT_1220x_crop_center.jpg?v=1724931958" alt="Oh Snap! Crew Socks">
+            <h3>Oh Snap! Crew Socks</h3>
+            <p>Price: 180 EGP</p>
+        </div>
+        <div class="product-card">
+            <img src="https://www.sockittome.com/cdn/shop/files/W0442-EverydayIsAPicnicWithYou-CrewSocks-ModelSide_1220x_crop_center.jpg?v=1724932129" alt="Everyday Is a Picnic With You Crew Socks">
+            <h3>Everyday Is a Picnic With You Crew Socks</h3>
+            <p>Price: 200 EGP</p>
+        </div>
+        <div class="product-card">
+            <img src="https://www.sockittome.com/cdn/shop/files/R0030-Fire-AthleticRibbed-Model_Front_1220x_crop_center.jpg?v=1724931712" alt="Fire Ribbed Crew Socks">
+            <h3>Fire Ribbed Crew Socks</h3>
+            <p>Price: 140 EGP</p>
+        </div>
+        <div class="product-card">
+            <img src="https://www.sockittome.com/cdn/shop/files/HotSauce-MensCrewSocks-MEF0247-MODEL-FRONT_1220x_crop_center.jpg?v=1724930878" alt="Hot Sauce Men's Crew Socks">
+            <h3>Hot Sauce Men's Crew Socks</h3>
+            <p>Price: 160 EGP</p>
+        </div>
+        <div class="product-card">
+            <img src="https://www.sockittome.com/cdn/shop/files/MEF0699-FlyingSquirrels-MensCrew-Model_Front_1220x_crop_center.jpg?v=1749590828" alt="Flying Squirrels Crew Socks">
+            <h3>Flying Squirrels Crew Socks</h3>
+            <p>Price: 160 EGP</p>
+        </div>
+        <div class="product-card">
+            <img src="https://www.sockittome.com/cdn/shop/files/W0536-WeightForIt-WomensCrew-Model_Front_1220x_crop_center.jpg?v=1749592882" alt="Weight for It Crew Socks">
+            <h3>Weight for It Crew Socks</h3>
+            <p>Price: 170 EGP</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Socksholic. All rights reserved.</p>
+    </footer>
+</body>
+</html>

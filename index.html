@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socksholic - Home</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            color: #333;
+        }
+        header {
+            background-color: #2cabe2;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2cabe2;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background-color: #FFFFFF;
+            color: #2cabe2;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #2cabe2;
+            color: white;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo">Socksholic 🧦</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Socksholic!</h1>
+        <p>Discover the funkiest and warmest socks for every season. Perfect for winter with hilarious patterns that will keep your feet cozy and your mood bright!</p>
+        <img src="https://www.sockittome.com/cdn/shop/files/Zodiac_Socks_Retail.jpg?v=1752101174 width=600" alt="Fun winter socks">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Socksholic. All rights reserved.</p>
+    </footer>
+</body>
+</html>
